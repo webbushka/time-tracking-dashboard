@@ -13,84 +13,176 @@
     />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-    <!-- daily -->
-    Previous - 7hrs
-    <!-- daily -->
-    32hrs
-    <!-- weekly -->
-    Previous - 36hrs
-    <!-- weekly -->
-    103hrs
-    <!-- monthly -->
-    Previous - 128hrs
-    <!-- monthly -->
-
-    Play 1hr
-    <!-- daily -->
-    Previous - 2hrs
-    <!-- daily -->
-    10hrs
-    <!-- weekly -->
-    Previous - 8hrs
-    <!-- weekly -->
-    23hrs
-    <!-- monthly -->
-    Previous - 29hrs
-    <!-- monthly -->
-
-    Study 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 7hrs
-    <!-- weekly -->
-    13hrs
-    <!-- monthly -->
-    Previous - 19hrs
-    <!-- monthly -->
-
-    Exercise 1hr
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    4hrs
-    <!-- weekly -->
-    Previous - 5hrs
-    <!-- weekly -->
-    11hrs
-    <!-- monthly -->
-    Previous - 18hrs
-    <!-- monthly -->
-
-    Social 1hr
-    <!-- daily -->
-    Previous - 3hrs
-    <!-- daily -->
-    5hrs
-    <!-- weekly -->
-    Previous - 10hrs
-    <!-- weekly -->
-    21hrs
-    <!-- monthly -->
-    Previous - 23hrs
-    <!-- monthly -->
-
-    Self Care 0hrs
-    <!-- daily -->
-    Previous - 1hr
-    <!-- daily -->
-    2hrs
-    <!-- weekly -->
-    Previous - 2hrs
-    <!-- weekly -->
-    7hrs
-    <!-- monthly -->
-    Previous - 11hrs
-    <!-- monthly -->
+  <body class="bg-[hsl(226,_43%,_10%)] text-white px-8 py-20">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 md:gap-8 max-w-[1440px] m-auto"
+    >
+      <div class="rounded-xl bg-blue-950 md:row-span-2">
+        <div
+          class="flex items-center gap-4 p-8 bg-indigo-700 rounded-xl md:flex-col md:items-start"
+        >
+          <div class="w-16">
+            <img
+              src="./images/image-jeremy.png"
+              alt="jeremy"
+              class="rounded-full border-4 border-solid border-white"
+            />
+          </div>
+          <div class="flex flex-col gap-0.5">
+            <span class="text-xs opacity-60">Report for</span>
+            <h1 class="text-xl font-light">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 py-6 px-2 md:grid-cols-1 md:px-6">
+          <button class="opacity-60 hover:opacity-100 md:text-left">
+            Daily
+          </button>
+          <button class="md:text-left">Weekly</button>
+          <button class="opacity-60 hover:opacity-100 md:text-left">
+            Monthly
+          </button>
+        </div>
+      </div>
+      <div
+        class="card pt-9 md:pt-11 rounded-xl bg-orange-400 bg-icon-work bg-no-repeat bg-[right_1.25rem_top]"
+      >
+        <div
+          class="grid grid-cols-2 items-center justify-between px-6 py-8 md:p-8 rounded-xl bg-blue-950"
+        >
+          <p class="text-sm font-medium">Work</p>
+          <p class="justify-self-end">
+            <img src="./images/icon-ellipsis.svg" alt="menu" />
+          </p>
+          <p
+            class="text-2xl font-light md:col-span-2 md:text-5xl md:pt-10 md:pb-5"
+          >
+            32hrs
+          </p>
+          <p
+            class="justify-self-end opacity-60 text-xs md:col-span-2 md:justify-self-start"
+          >
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+      <div
+        class="card pt-9 md:pt-11 rounded-xl bg-sky-300 bg-icon-play bg-no-repeat bg-[right_1.25rem_top]"
+      >
+        <div
+          class="grid grid-cols-2 items-center justify-between px-6 py-8 md:p-8 rounded-xl bg-blue-950"
+        >
+          <p class="text-sm font-medium">Play</p>
+          <p class="justify-self-end">
+            <img src="./images/icon-ellipsis.svg" alt="menu" />
+          </p>
+          <p
+            class="text-2xl font-light md:col-span-2 md:text-5xl md:pt-10 md:pb-5"
+          >
+            32hrs
+          </p>
+          <p
+            class="justify-self-end opacity-60 text-xs md:col-span-2 md:justify-self-start"
+          >
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+      <div
+        class="card pt-9 md:pt-11 rounded-xl bg-red-400 bg-icon-study bg-no-repeat bg-[right_1.25rem_top]"
+      >
+        <div
+          class="grid grid-cols-2 items-center justify-between px-6 py-8 md:p-8 rounded-xl bg-blue-950"
+        >
+          <p class="text-sm font-medium">Study</p>
+          <p class="justify-self-end">
+            <img src="./images/icon-ellipsis.svg" alt="menu" />
+          </p>
+          <p
+            class="text-2xl font-light md:col-span-2 md:text-5xl md:pt-10 md:pb-5"
+          >
+            32hrs
+          </p>
+          <p
+            class="justify-self-end opacity-60 text-xs md:col-span-2 md:justify-self-start"
+          >
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+      <div
+        class="card pt-9 md:pt-11 rounded-xl bg-green-400 bg-icon-exercise bg-no-repeat bg-[right_1.25rem_top]"
+      >
+        <div
+          class="grid grid-cols-2 items-center justify-between px-6 py-8 md:p-8 rounded-xl bg-blue-950"
+        >
+          <p class="text-sm font-medium">Exercise</p>
+          <p class="justify-self-end">
+            <img src="./images/icon-ellipsis.svg" alt="menu" />
+          </p>
+          <p
+            class="text-2xl font-light md:col-span-2 md:text-5xl md:pt-10 md:pb-5"
+          >
+            32hrs
+          </p>
+          <p
+            class="justify-self-end opacity-60 text-xs md:col-span-2 md:justify-self-start"
+          >
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+      <div
+        class="card pt-9 md:pt-11 rounded-xl bg-purple-700 bg-icon-social bg-no-repeat bg-[right_1.25rem_top]"
+      >
+        <div
+          class="grid grid-cols-2 items-center justify-between px-6 py-8 md:p-8 rounded-xl bg-blue-950"
+        >
+          <p class="text-sm font-medium">Social</p>
+          <p class="justify-self-end">
+            <img src="./images/icon-ellipsis.svg" alt="menu" />
+          </p>
+          <p
+            class="text-2xl font-light md:col-span-2 md:text-5xl md:pt-10 md:pb-5"
+          >
+            32hrs
+          </p>
+          <p
+            class="justify-self-end opacity-60 text-xs md:col-span-2 md:justify-self-start"
+          >
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+      <div
+        class="card pt-9 md:pt-11 rounded-xl bg-yellow-300 bg-icon-self-care bg-no-repeat bg-[right_1.25rem_top]"
+      >
+        <div
+          class="grid grid-cols-2 items-center justify-between px-6 py-8 md:p-8 rounded-xl bg-blue-950"
+        >
+          <p class="text-sm font-medium">Self Care</p>
+          <p class="justify-self-end">
+            <img src="./images/icon-ellipsis.svg" alt="menu" />
+          </p>
+          <p
+            class="text-2xl font-light md:col-span-2 md:text-5xl md:pt-10 md:pb-5"
+          >
+            32hrs
+          </p>
+          <p
+            class="justify-self-end opacity-60 text-xs md:col-span-2 md:justify-self-start"
+          >
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
